@@ -818,7 +818,7 @@ hr {
 }
 
 .icon_change_pass_success {
-    background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/yl/r/VsUKdy4dVJW.png?_nc_eui2=AeGHpb_m1bb1nhLAo_aPpqFGlGtjtSEt_YOUa2O1IS39g5e7bbeMaG0vwxKAS1sfIuBmLTvUUwQHfsipx_pK-GGU);
+    background-image: url("../Image/change-pass-success.png");
     background-position: 0px 0px;
     background-size: auto;
     width: 328px;

