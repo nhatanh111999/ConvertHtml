@@ -1096,3 +1096,9 @@ hr {
         font-size: 0.875rem;
     }
 }
+
+
+.phone-select-custom:focus-visible{
+    border: none;
+    outline: none;    
+}
